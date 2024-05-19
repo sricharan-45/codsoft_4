@@ -55,8 +55,6 @@ public class AtmInterface extends Applet implements ActionListener {
         balanceLabel.setFont(new Font("Arial", Font.PLAIN, 20));
         topPanel.add(balanceLabel);
         add(topPanel, BorderLayout.NORTH);
-
-        // Center Panel for Amount Field and Buttons
         Panel centerPanel = new Panel(new BorderLayout());
         Panel inputPanel = new Panel(new FlowLayout(FlowLayout.CENTER, 10, 10));
         Label enterAmountLabel = new Label("Enter amount: ");
@@ -77,8 +75,6 @@ public class AtmInterface extends Applet implements ActionListener {
         buttonPanel.add(balanceButton);
         centerPanel.add(buttonPanel, BorderLayout.CENTER);
         add(centerPanel, BorderLayout.CENTER);
-
-        // Bottom Panel for Output Area
         outputArea = new TextArea(20, 30);
         outputArea.setEditable(false);
         outputArea.setFont(new Font("Arial", Font.BOLD, 20));
